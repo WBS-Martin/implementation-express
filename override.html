@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <!-- enctype must be set to the type you will parse before methodOverride() -->
+    <form
+      method="POST"
+      action="http://localhost:3000/override?_method=PUT"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <!-- <input type="hidden" name="_method" value="PUT"> -->
+      <span>Some element</span>
+      <button type="submit">Delete resource</button>
+    </form>
+  </body>
+</html>
